@@ -66,7 +66,7 @@ help:
 PHONY += install
 install:
 	for i in $(MODULES_INSTALL); do \
-	    install -m644 -b -D $(DRIVER_NAME)/$(KVER_MAJ_MIN)/$(DRIVER_SRC_PATH)/$$i ${MDIR}/updates/$(DRIVER_KPATH)/$(DRIVER_NAME)/$$i; \
+	    install -m644 -b -D $(DRIVER_NAME)/$(KVER_MAJ_MIN)/drivers/misc/$(DRIVER_SRC_PATH)/$$i ${MDIR}/updates/$(DRIVER_KPATH)/$(DRIVER_NAME)/$$i; \
 	done
 	depmod -a
 
